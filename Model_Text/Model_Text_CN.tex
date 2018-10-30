@@ -5,6 +5,7 @@
 % Author: Molakir Lee
 %--------------------
 %更新说明（20181030）
+%本版本使用 XeTex 编译
 %1. The "CJKutf8 package" doesn't play well with the "silence package". So there is a recommended approach to typeset Chinese these days is by using the "xeCJK" or "ctex" packages, and then compiling the project with XeLaTeX. I've therefore replaced "\usepackage{CJKutf8}" with "\usepackage{xeCJK}", and changed the compiler to "XeLaTeX" (you can find this setting by clicking on the Overleaf menu icon above the file list panel). It is then unnecessary to add "\begin{CJK*}{UTF8}{gbsn}...\end{CJK*}" around Chinese text in your document. "xeCJK (and ctex)" is smart  enough to switch encodings automatically. The silence package now works well to dismiss the warning.
 %2. In addition, the "times package" on line 27 is now out-of-date and contains many bugs, e.g. it may cause some mathematical symbols, such as all equal sign = to go missing in the output PDF. It would be highly recommended to use mathptmx, tgtermes, or the newtx package, to typeset your document in Times fonts. I've added \usepackage{newtxtext,newtxmath} on line 29.
 %3. Similarly, the color package on line 33 has been superseded by xcolor.
