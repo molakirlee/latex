@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University/School Laboratory Report
+% LaTeX Template
+% Version Pro 2018.2.19
+% Author: Molakir Lee
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%---------------------------------------------------------------
+%PACKAGES AND DOCUMENT CONFIGURATIONS
+%---------------------------------------------------------------
+%忽略Warning
+\RequirePackage{silence}%忽略Warning的宏包，使用\WarningFilter时如果不放在cls内（如调试过程），那么就该包和\WarningFilter一起放在\doucumentclass之前
+\WarningFilter{l3regex}{This package is obsolet}%忽略mhchem的固有错误，因为mhchem自带l3regex包而该包已老，需用expl3替代，所以有一个harmless的warning，这两个命令一定要加在class之前
+%---------------------------------------------------------------
+%----------------------------宏包-------------------------------
+%---------------------------------------------------------------
+\documentclass{article}
+\usepackage{CJKutf8}%导入CJKutf8包，并且激活中文、日文、韩文的uft8编码
+\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage[super,square,sort,comma]{natbib} % Bibliography style 
+\usepackage{amsmath} % Required for some math elements 
+\usepackage{hyperref} %hyper link of reference
+\usepackage{times} % Uncomment to use the Times New Roman font
+\usepackage{booktabs} % Toprule midrule bottomrule
+\usepackage[bf]{caption} % Bold fonts for caption
+\usepackage{float} % Control the location of the figure
+\usepackage{color} % Text color
+\usepackage{expl3}%化学式相关的子包
+\usepackage{geometry} %Page Size Usepackage
+\usepackage{textcomp}%defines the macro \textquotesingle
+%---------------------------------------------------------------
+%----------------------------设置-------------------------------
+%---------------------------------------------------------------
+%-------------------标题段落设置
+\setlength{\abovecaptionskip}{0pt} % Set the length between the caption and table
+\setlength{\belowcaptionskip}{5pt} % Set the length between the caption and figure
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number
+\graphicspath{{../20180830/pic/}}%添加图片途径
+%-------------------enumerate设置
+\usepackage{enumerate}%设置enumerate格式
+\renewcommand{\labelenumi}{(\theenumi)} % Make numbering in the enumerate environment by number rather than letter
+%\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number
+%--------------------页面设置
+\geometry{a4paper,left=3cm,right=2.5cm,top=1.2cm,bottom=1.2cm} %Page Size and Margin
+\hyphenpenalty=5000 % Deal with the overfull
+\tolerance=1000 % Deal with the overfull
+\usepackage{indentfirst}%首行缩进宏包
+\setlength{\parindent}{2em}%首行缩进2字符!!!不能放的太靠前！！！
+%--------------------其他设置
+\DeclareTextFontCommand{\emph}{\color{red}}%更改强调的格式
+% -----------------------------
+%DOCUMENT INFORMATION
+%-----------------------------------------
+\title{Short Review of Jiang's Research on the Anti-fouling Peptide} % Title
+\author{Chuanxi \textsc{Li}} % Author name
+\date{\today} % Date for the report
+\begin{document}
+\maketitle % Insert the title, author and date
+\sisetup{separate-uncertainty,multi-part-units = single,range-phrase = --,range-units = single,list-units = single} % Set for SI units
+%----------------------------------------
+%Section Information
+%----------------------------------------
+\section{Information}
+Human serum albumin (HSA) is composed of 10\% E and 10\% K residues. .
+
+
+
+
+
+
+%-----------------------------------
+%BIBLIOGRAPHY
+%----------------------------------
+\bibliographystyle{unsrt}
+\bibliography{reference}
+%-----------------------------------
+\end{document}
+%----------------
+% MODEL
+%----------------
+%----------------
+%ABSTRACT
+%
+%\begin{abstract}
+%\end{abstract}
+%----------------
+%----------------
+%SECTION N
+%
+%\section{Sample}
+%----------------
+%----------------
+%FIGURE
+%
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.65\textwidth]{fig1} % Include the image 
+%\caption{ATR-FTIR spectra}
+%\label{fig1}
+%\end{figure}
+%----------------
+%----------------
+%TABLE
+%
+%\begin{table}[H]
+%\centering
+%\caption{Isoelectric Point}
+%\label{isoelectric_point}
+%\begin{tabular}{c c}
+%\toprule
+%Name & isoelectric point\\
+%\midrule
+%BSA&4.7\\
+%\bottomrule
+%\end{tabular}
+%\end{table}
+%----------------
+%----------------
+%中文输入
+%
+%\begin{CJK*}{UTF8}{bsmi}
+%\section{前言}
+%在该第一部分中的一些额外的元素可以被添加。
+%\end{CJK*}
+%----------------
+%----------------
+%CHEMICAL EQUATION
+%
+%\begin{center}\ce{2 Mg + O2 -> 2 MgO}\end{center}
+%----------------
+%----------------
+%FOUR FIGURE A,B,C,D
+%
+%\begin{figure*}[!t]
+%\centering
+%\subfloat[]{\includegraphics[width=0.4\textwidth]{figure/network_flow_graph_a}
+%\label{}}
+%\hfil
+%\subfloat[]{\includegraphics[width=0.4\textwidth]{figure/network_flow_graph_b}
+%\label{}}
+%\hfil
+%\subfloat[]{\includegraphics[width=0.4\textwidth]{figure/network_flow_graph_c}
+%\label{}}
+%\hfil
+%\subfloat[]{\includegraphics[width=0.4\textwidth]{figure/network_flow_graph_d}
+%\label{}}
+%\caption{Network flow graph}
+%\label{fig:nfg}
+%\end{figure*}
+%----------------
+%----------------
+%ITEM
+%
+%\begin{description}
+%\item[Preparation of alternating charged peptide SAM.]Rinse chip with ethanol and Millipore water
+%\end{description} 
+%----------------
+%----------------
+%ITEM WITH NUMBER
+%
+%\begin{enumerate}
+%\begin{item}
+%The \emph{atomic weight of an element} is the relative weight of one of its atoms compared to C-12 with a weight of 12.0000000$\ldots$, hydrogen with a weight of 1.008, to oxygen with a weight of 16.00. Atomic weight is also the average weight of all the atoms of that element as they occur in nature.
+%\end{item}
+%\end{enumerate}
+%----------------
+%----------------
+%Color the words
+%
+%\color{red}{}
+%----------------
+%----------------
+%CITE
+%
+%\cite{}
+%----------------
+%----------------
+%REF
+%
+%\ref{}
+%----------------
+%----------------
+%FRONT UNIT
+%
+%\SI[]{}{}
+%----------------
+%----------------
+%UNIT WITH A RANGE
+%
+%\SIrange{}{}{}
+%----------------
+%----------------
+
+
+
+

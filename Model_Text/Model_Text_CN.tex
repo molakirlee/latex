@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University/School Laboratory Report
+% LaTeX Template
+% Version v1.0 2018.10.30
+% Author: Molakir Lee
+%--------------------
+%更新说明（20181030）
+%1. The "CJKutf8 package" doesn't play well with the "silence package". So there is a recommended approach to typeset Chinese these days is by using the "xeCJK" or "ctex" packages, and then compiling the project with XeLaTeX. I've therefore replaced "\usepackage{CJKutf8}" with "\usepackage{xeCJK}", and changed the compiler to "XeLaTeX" (you can find this setting by clicking on the Overleaf menu icon above the file list panel). It is then unnecessary to add "\begin{CJK*}{UTF8}{gbsn}...\end{CJK*}" around Chinese text in your document. "xeCJK (and ctex)" is smart  enough to switch encodings automatically. The silence package now works well to dismiss the warning.
+%2. In addition, the "times package" on line 27 is now out-of-date and contains many bugs, e.g. it may cause some mathematical symbols, such as all equal sign = to go missing in the output PDF. It would be highly recommended to use mathptmx, tgtermes, or the newtx package, to typeset your document in Times fonts. I've added \usepackage{newtxtext,newtxmath} on line 29.
+%3. Similarly, the color package on line 33 has been superseded by xcolor.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%---------------------------------------------------------------
+%PACKAGES AND DOCUMENT CONFIGURATIONS
+%---------------------------------------------------------------
+%忽略Warning
+\RequirePackage{silence}%忽略Warning的宏包，使用\WarningFilter时如果不放在cls内（如调试过程），那么就该包和\WarningFilter一起放在\doucumentclass之前
+\WarningFilter{l3regex}{This package is obsolete}%忽略mhchem的固有错误，因为mhchem自带l3regex包而该包已老，需用expl3替代，所以有一个harmless的warning，这两个命令一定要加在class之前
+% 其实不必，只需要在 mhchem 或是任何会用到 l3regex的宏包之前即可。需要在 \documentclass 之前调用的情况是—— .cls载入的宏包使用了 l3regex。
+%---------------------------------------------------------------
+%----------------------------宏包-------------------------------
+%---------------------------------------------------------------
+\documentclass{article}
+\usepackage{xeCJK}% 原版本采用CJKutf8包，但该包比较老旧，情况许可的话一般建议用 xeCJK 宏包集，或是 ctex 宏包集，然后用 xelatex 编译。恰巧xeCJK和silence 不会冲突，建议就用这个方法了。（也可使用ctex包，ctex包可兼容与LuaLatex；但也不支持pdfLatex，会提示“CTeX fontset `fandol' is unavailable in current mode.”）
+\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage[super,square,sort,comma]{natbib} % Bibliography style 
+\usepackage{amsmath} % Required for some math elements 
+\usepackage{hyperref} %hyper link of reference
+% \usepackage{times} % Uncomment to use the Times New Roman font
+% times 宏包太老旧、很多问题的，不建议使用。推荐 mathptmx, tgtermes 或是 newtxmath,newtxtext。
+\usepackage{newtxtext,newtxmath}
+\usepackage{booktabs} % Toprule midrule bottomrule
+\usepackage[bf]{caption} % Bold fonts for caption
+\usepackage{float} % Control the location of the figure
+% \usepackage{color} % Text color
+\usepackage{xcolor} % color 比较老旧了，建议使用 xcolor。
+\usepackage{expl3}%化学式相关的子包
+\usepackage{geometry} %Page Size Usepackage
+\usepackage{textcomp}%defines the macro \textquotesingle
+%---------------------------------------------------------------
+%----------------------------设置-------------------------------
+%---------------------------------------------------------------
+%-------------------标题段落设置
+\setlength{\abovecaptionskip}{0pt} % Set the length between the caption and table
+\setlength{\belowcaptionskip}{5pt} % Set the length between the caption and figure
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number
+\graphicspath{{../20180830/pic/}}%添加图片途径
+%-------------------enumerate设置
+\usepackage{enumerate}%设置enumerate格式
+\renewcommand{\labelenumi}{(\theenumi)} % Make numbering in the enumerate environment by number rather than letter
+%\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number
+%--------------------页面设置
+\geometry{a4paper,left=3cm,right=2.5cm,top=1.2cm,bottom=1.2cm} %Page Size and Margin
+\hyphenpenalty=5000 % Deal with the overfull
+\tolerance=1000 % Deal with the overfull
+\usepackage{indentfirst}%首行缩进宏包
+\setlength{\parindent}{2em}%首行缩进2字符!!!不能放的太靠前！！！
+\renewcommand{\baselinestretch}{1.5}%1.5倍行距
+%--------------------其他设置
+\DeclareTextFontCommand{\emph}{\color{red}}%更改强调的格式
+% -----------------------------
+%DOCUMENT INFORMATION
+%-----------------------------------------
+\title{玺洛克你想写些什么？} % Title
+\author{Chuanxi \textsc{Li}} % Author name
+\date{\today} % Date for the report
+\begin{document}
+\maketitle % Insert the title, author and date
+\sisetup{separate-uncertainty,multi-part-units = single,range-phrase = --,range-units = single,list-units = single} % Set for SI units
+%----------------------------------------
+%Section Information
+%----------------------------------------
+
+
+\section{前言}
+这里写前言部分内容。
+
+\section{关于数学部分}
+在本节中的一些数学会使用数学模型含中文字符显示。
+
+\vspace{0.5cm} % A white space
+
+\noindent%取消首行缩进
+You can also insert Latin text in your document
+
+\vspace{0.5cm}
+
+%本模板兼容繁体字
+這是一個傳統的中國文字
+
+
+\end{document}

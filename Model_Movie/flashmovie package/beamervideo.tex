@@ -1,0 +1,32 @@
+\RequirePackage{flashmovie}
+% it is necessary to use "\RequirePackage{flashmovie}" because beamer
+% also uses "\pdfminorversion". see flashmovie.sty for an explanation.
+
+\documentclass{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\title{Flash video in Beamer presentation\\with \texttt{flashmovie} package}
+\author{Share\LaTeX}
+\date{2013}
+
+\begin{document}
+
+\frame{\maketitle}
+
+
+\begin{frame}
+\frametitle{\textit{Sintel} trailer 270p FLV}
+
+\begin{center}
+\flashmovie[width=0.7\textwidth,engine=flv-player,auto=0,controlbar=1]{sintel_trailer-270p.flv}
+
+Click on picture to play the movie
+\end{center}
+
+Movie source: http://www.sintel.org
+\end{frame}
+
+
+\end{document}
