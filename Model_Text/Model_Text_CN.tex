@@ -22,7 +22,7 @@
 %---------------------------------------------------------------
 \documentclass{article}
 \usepackage{xeCJK}% 原版本采用CJKutf8包，但该包比较老旧，情况许可的话一般建议用 xeCJK 宏包集，或是 ctex 宏包集，然后用 xelatex 编译。恰巧xeCJK和silence 不会冲突，建议就用这个方法了。（也可使用ctex包，ctex包可兼容与LuaLatex；但也不支持pdfLatex，会提示“CTeX fontset `fandol' is unavailable in current mode.”）
-\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage[version=4]{mhchem} % Package for chemical equation typesetting
 \usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
 \usepackage{graphicx} % Required for the inclusion of images
 \usepackage[super,square,sort,comma]{natbib} % Bibliography style 
@@ -59,6 +59,9 @@
 \usepackage{indentfirst}%首行缩进宏包
 \setlength{\parindent}{2em}%首行缩进2字符!!!不能放的太靠前！！！
 \renewcommand{\baselinestretch}{1.5}%1.5倍行距
+%~~~~~~~~~~~~~~~~~~Tikz~~~~~~~~~~~~~~~~~~
+\RequirePackage{tikz}%Tikz
+\usetikzlibrary{positioning}%调整tikz位置分布
 %--------------------其他设置
 \DeclareTextFontCommand{\emph}{\color{red}}%更改强调的格式
 % -----------------------------
@@ -93,3 +96,28 @@ You can also insert Latin text in your document
 
 
 \end{document}
+
+
+%四幅图并列
+\iffalse
+\begin{figure}
+    \centering
+\begin{tikzpicture}
+\scope[nodes={inner sep=0,outer sep=0}]
+\node[anchor=south east] (a)
+  {\includegraphics[width=4cm]{length_spr}};
+\node[right=10pt of a] (b)
+  {\includegraphics[width=4cm]{local_spr}};
+\node[anchor=north east] (c)
+  {\includegraphics[width=4cm]{length_ad}};
+\node[right=10pt of c] (d)
+  {\includegraphics[width=4cm]{local_ad}};
+\endscope
+\foreach \n in {a,b,c,d} {
+\node[anchor=north west,left=-5pt of \n.north west] at (\n.north west) {(\n)};
+}
+\end{tikzpicture}
+    \caption{Effect of length and charge distribution.Effect of length and charge distribution(a-b)The SPR curve of adsorption of peptides with different length and charge distribution; (c-d)The effect of length}
+    \label{fig:my_label}
+\end{figure}
+\fi

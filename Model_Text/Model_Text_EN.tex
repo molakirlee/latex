@@ -15,7 +15,7 @@
 %---------------------------------------------------------------
 \documentclass{article}
 \usepackage{CJKutf8}%导入CJKutf8包，并且激活中文、日文、韩文的uft8编码
-\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage[version=4]{mhchem} % Package for chemical equation typesetting
 \usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
 \usepackage{graphicx} % Required for the inclusion of images
 \usepackage[super,square,sort,comma]{natbib} % Bibliography style 
@@ -48,6 +48,9 @@
 \tolerance=1000 % Deal with the overfull
 \usepackage{indentfirst}%首行缩进宏包
 \setlength{\parindent}{2em}%首行缩进2字符!!!不能放的太靠前！！！
+%~~~~~~~~~~~~~~~~~~Tikz~~~~~~~~~~~~~~~~~~
+\RequirePackage{tikz}%Tikz
+\usetikzlibrary{positioning}%调整tikz位置分布
 %--------------------其他设置
 \DeclareTextFontCommand{\emph}{\color{red}}%更改强调的格式
 % -----------------------------
@@ -132,7 +135,7 @@ Human serum albumin (HSA) is composed of 10\% E and 10\% K residues. .
 %----------------
 %----------------
 %FOUR FIGURE A,B,C,D
-%
+%Method one
 %\begin{figure*}[!t]
 %\centering
 %\subfloat[]{\includegraphics[width=0.4\textwidth]{figure/network_flow_graph_a}
@@ -149,6 +152,30 @@ Human serum albumin (HSA) is composed of 10\% E and 10\% K residues. .
 %\caption{Network flow graph}
 %\label{fig:nfg}
 %\end{figure*}
+%----------------
+%Method two
+\iffalse
+\begin{figure}
+    \centering
+\begin{tikzpicture}
+\scope[nodes={inner sep=0,outer sep=0}]
+\node[anchor=south east] (a)
+  {\includegraphics[width=4cm]{length_spr}};
+\node[right=10pt of a] (b)
+  {\includegraphics[width=4cm]{local_spr}};
+\node[anchor=north east] (c)
+  {\includegraphics[width=4cm]{length_ad}};
+\node[right=10pt of c] (d)
+  {\includegraphics[width=4cm]{local_ad}};
+\endscope
+\foreach \n in {a,b,c,d} {
+\node[anchor=north west,left=-5pt of \n.north west] at (\n.north west) {(\n)};
+}
+\end{tikzpicture}
+    \caption{Effect of length and charge distribution.Effect of length and charge distribution(a-b)The SPR curve of adsorption of peptides with different length and charge distribution; (c-d)The effect of length}
+    \label{fig:my_label}
+\end{figure}
+\fi
 %----------------
 %----------------
 %ITEM

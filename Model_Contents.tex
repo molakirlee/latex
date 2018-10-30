@@ -1,0 +1,182 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University/School Laboratory Report
+% LaTeX Template
+% Author: XiLock
+% Version: pro 2018.10.30
+% This ia a MODEL for main contents in ARTICELs or BEAMERS
+% Just copy what's useful to where you want.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%ABSTRACT
+%
+\begin{abstract}
+\end{abstract}
+%----------------
+%----------------
+
+%SECTION
+%
+\section{Sample}
+%----------------
+%----------------
+%FIGURE
+%
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{fig1}
+\caption{ATR-FTIR spectra}
+\label{fig1}
+\end{figure}
+%----------------
+%----------------
+%THREE WIRE TABLE
+%
+\usepackage{booktabs} % Toprule midrule bottomrule
+\begin{table}[H]
+\centering
+\caption{Isoelectric Point}
+\label{isoelectric_point}
+\begin{tabular}{c c}
+\toprule
+Name & isoelectric point\\
+\midrule
+BSA&4.7\\
+\bottomrule
+\end{tabular}
+\end{table}
+%----------------
+%----------------
+%中文输入
+\usepackage{CJKutf8}%引入CJKutf8包
+\begin{CJK*}{UTF8}{bsmi}%添加中文简体环境
+\section{前言}
+在该第一部分中的一些额外的元素可以被添加。
+\end{CJK*}
+%----------------
+%但是上述方法不兼容于Silence包，为了解决这个问题，改用ctex包或xetex包，并用XeTex或LuaTex编译。该方法不需要区别简体和繁体。
+\usepackage{xeCJK}% CJKutf8包比较老旧，情况许可的话一般建议用 xeCJK 宏包集，或是 ctex 宏包集，然后用 xelatex 编译。恰巧xeCJK和silence 不会冲突，建议就用这个方法了。（也可使用ctex包，ctex包可兼容与LuaLatex；但也不支持pdfLatex，会提示“CTeX fontset `fandol' is unavailable in current mode.”）
+%----------------
+%----------------
+%CHEMICAL EQUATION
+%
+\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\begin{center}\ce{2 Mg + O2 -> 2 MgO}\end{center}
+%----------------
+%----------------
+%FOUR FIGURE A,B,C,D
+%
+%Method One - Tikz
+\RequirePackage{tikz}%Tikz
+\usetikzlibrary{positioning}%调整tikz位置分布
+
+\begin{figure}
+    \centering
+\begin{tikzpicture}
+\scope[nodes={inner sep=0,outer sep=0}]
+\node[anchor=south east] (a)
+  {\includegraphics[width=4cm]{length_spr}};
+\node[right=10pt of a] (b)
+  {\includegraphics[width=4cm]{local_spr}};
+\node[anchor=north east] (c)
+  {\includegraphics[width=4cm]{length_ad}};
+\node[right=10pt of c] (d)
+  {\includegraphics[width=4cm]{local_ad}};
+\endscope
+\foreach \n in {a,b,c,d} {
+\node[anchor=north west,left=-5pt of \n.north west] at (\n.north west) {(\n)};
+}
+\end{tikzpicture}
+    \caption{Effect of length }
+    \label{fig:my_label}
+\end{figure}
+%----------------
+%Method Two
+\begin{figure*}[!t]
+\centering
+\subfloat[]{\includegraphics[width=0.4\textwidth]{figure/network_flow_graph_a}
+\label{}}
+\hfil
+\subfloat[]{\includegraphics[width=0.4\textwidth]{figure/network_flow_graph_b}
+\label{}}
+\hfil
+\subfloat[]{\includegraphics[width=0.4\textwidth]{figure/network_flow_graph_c}
+\label{}}
+\hfil
+\subfloat[]{\includegraphics[width=0.4\textwidth]{figure/network_flow_graph_d}
+\label{}}
+\caption{Network flow graph}
+\label{fig:nfg}
+\end{figure*}
+%----------------
+%----------------
+%ITEM
+%
+\begin{description}
+\item[Preparation of alternating charged peptide SAM.]Rinse chip with ethanol and Millipore water
+\end{description} 
+%----------------
+%----------------
+%ITEM WITH NUMBER
+%
+\begin{enumerate}
+\begin{item}
+The \emph{atomic weight of an element} is the relative weight of one of its atoms compared to C-12 with a weight of 12.0000000$\ldots$, hydrogen with a weight of 1.008, to oxygen with a weight of 16.00. Atomic weight is also the average weight of all the atoms of that element as they occur in nature.
+\end{item}
+\end{enumerate}
+%----------------
+%----------------
+%Color the words
+%
+\color{red}{}
+%----------------
+%----------------
+%CITE
+%
+\cite{}
+%----------------
+%----------------
+%REF
+%
+\ref{}
+%----------------
+%----------------
+%FRONT UNIT
+%
+\SI[]{}{}
+%----------------
+%----------------
+%UNIT WITH A RANGE
+%
+\SIrange{}{}{}
+%----------------
+%----------------
+%图中加强调框
+%
+\begin{tikzpicture}
+    \node[anchor=south west,inner sep=0](image) at (0,0){\includegraphics[width=0.8\textwidth]{l_nmr_quer}};
+    \scope[x=(image.south east),y=(image.north west)]
+    %方便找相对位置
+    %\draw[help lines,xstep=.1,ystep=.1] (0,0) grid (1,1);
+    %\foreach \x in {0,1,...,9} { \node [anchor=north] at (\x/10,0) {0.\x}; }
+    %\foreach \y in {0,1,...,9} { \node [anchor=east] at (0,\y/10) {0.\y}; }
+    \draw[red, ultra thick, rounded corners](0.7,0.4) rectangle(0.9,0.6);
+    \endscope
+\end{tikzpicture}
+%----------------
+%----------------
+%图片加边框
+%
+\setlength{\fboxrule}{1pt}    % 边框线线宽  
+\setlength{\fboxsep}{3pt}   % 边框与图形间的距离        
+\fbox{\includegraphics[width=7cm]{blank}}
+%----------------
+%----------------
+%其他
+%
+\newcounter{newcountfigure}%创建新计数器
+\definecolor{purple4}{RGB}{85,26,139}%定义颜色purple4
+\DeclareSIUnit\ppm{ppm}%creat a new unit named ppm
+\texorpdfstring{}%想在标题中加入数学公式时，把公式放在括号内
+\addbibresource{../references.bib}%添加参考文献库
+
+

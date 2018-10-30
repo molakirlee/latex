@@ -129,7 +129,7 @@
 \DeclareSIUnit\ppm{ppm}%creat a new unit named ppm
 %\texorpdfstring{}%想在标题中加入数学公式时，把公式放在括号内
 %\addbibresource{../references.bib}%添加参考文献库
-\iffalse%~~~~~~~~~~~~~~图中加强调框~~~~~~~~~~
+\iffalse%~~~~~~~~~~~~~~图中加强调框 START~~~~~
 \begin{tikzpicture}
     \node[anchor=south west,inner sep=0](image) at (0,0){\includegraphics[width=0.8\textwidth]{l_nmr_quer}};
     \scope[x=(image.south east),y=(image.north west)]
@@ -140,14 +140,14 @@
     \draw[red, ultra thick, rounded corners](0.7,0.4) rectangle(0.9,0.6);
     \endscope
 \end{tikzpicture}
-\fi%~~~~~~~~~~~~~~~~~~图中加强调框~~~~~~~~~~~
-\iffalse%~~~~~~~~~~~~~~图片加边框~~~~~~~~~~
+\fi%~~~~~~~~~~~~~~~~~~图中加强调框 END~~~~~~~
+\iffalse%~~~~~~~~~~~~~~图片加边框 START~~~~~
 %\setlength{\fboxrule}{1pt}    % 边框线线宽  
 %\setlength{\fboxsep}{3pt}   % 边框与图形间的距离        
 %\fbox{\includegraphics[width=7cm]{blank}}
-\fi%~~~~~~~~~~~~~~~~~~图片加边框~~~~~~~~~~~
+\fi%~~~~~~~~~~~~~~~~~~图片加边框 END~~~~~~~
 
-\iffalse%~~~~~~~~~~~~~三线表~~~~~~~~~~~~~~~
+\iffalse%~~~~~~~~~~~~~三线表 START~~~~~~~~~~
     \begin{table}[H]\footnotesize
         \centering
         \caption{Area occupied by a single molecule}
@@ -169,7 +169,7 @@
             \bottomrule
         \end{tabular}
     \end{table}
-\fi%~~~~~~~~~~~~~~~~三线表~~~~~~~~~~~~~~~
+\fi%~~~~~~~~~~~~~~~~三线表 END~~~~~~~~~~~
 
 
 %----------------------------------------
