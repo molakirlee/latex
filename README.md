@@ -33,7 +33,7 @@ LuaTexºËÐÄµÄÓÅÊÆÊÇÄÚÇ¶LuaÓïÑÔ£¬¼ÆËãÄÜÁ¦ºÍÀ©Õ¹ÐÔ¸üÇ¿£¬µ«¸ÃÓÅÊÆÀûÓÃÂÊºÜµÍ£¬¶øÇÒÔËÐ
 TeXÊÇÒ»¸ö·Ç³£¶à²Å¶àÒÕµÄ³ÌÐò¡£Ëü²»µ«¿ÉÒÔ±à¼­ÂÛÎÄ£¬Êé¼®£¬»ÃµÆÆ¬£¬Ñ§ÊõÔÓÖ¾£¬¸öÈË¼ò Àú£¬»¹¿ÉÒÔ ±à¼­ÀÖÆ×£¬»¯Ñ§·Ö×ÓÍ¼£¬µçÂ·Í¼£¬¹ú¼ÊÏóÆå£¬ÖÐ¹úÏóÆå£¬ÉõÖÁÎ§ÆåÆåÆ×£¬¡­¡­ÊÂÊµÉÏÖ»ÓÐÉÙ Á¿ÎÄµµ²»ÊÊºÏÓÃ TeX±à¼­¡£
 
 ### ²¿·Ö×ÊÔ´
-[ÊÖ°ÑÊÖ½ÌÄãÓÃLaTeXÐ´×÷²©Ê¿ÂÛÎÄ¡ª¡ªNicola L. C. Talbot][1]
+[ÊÖ°ÑÊÖ½ÌÄãÓÃLaTeXÐ´×÷²©Ê¿ÂÛÎÄ¡ª¡ªNicola L. C. Talbot][1]  
 [ÕÂ½Ú±êÌâÅÅ°æºê°ü][2]
 
 [1]:https://mp.weixin.qq.com/s?__biz=MzAxNjI3Mzc3Mw==&mid=2652773033&idx=1&sn=007ae6bb8c3f26b66bddb0ddb112ca58&chksm=801de2abb76a6bbdd92bf576d59ce94b7bc458f3e34b7163937a32a215262c76a9be3d1b59a9&mpshare=1&scene=24&srcid=09089mUT0Tb1wOsi0EfYYlzF#rd
