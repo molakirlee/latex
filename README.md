@@ -1,9 +1,9 @@
-# Ð´ÔÚÇ°ÃæµÄ»°
+### Ð´ÔÚÇ°ÃæµÄ»°
 ÕûÀíÁËÒ»ÏÂ×Ô¼º³£ÓÃµÄModel·ÅÔÚÕâÀïÒÔ±ãÈ¡ÓÃ
 
 ºÃ°É£¬Ë³±ãÒ²½éÉÜÒ»ÏÂLatex
 
-# TeX µÄµ®ÉúÓë·¢Õ¹
+### TeX µÄµ®ÉúÓë·¢Õ¹
 
 ÆßÊ®Äê´úÄ©£¬Donald E. Knuth£¨¸ßµÂÄÉ£©ÔÚ¿´µ½Æä¶à¾í¾ÞÖø¡°The Art of Computer Programming¡±µÚ¶þ¾íµÄÐ£ÑùÊ±£¬¶ÔÓÉ¼ÆËã»úÅÅ°æµÄÐ£ÑùµÄµÍÖÊÁ¿¸Ðµ½ÎÞ·¨ÈÌÊÜ¡£Òò´Ë¾ö¶¨×Ô ¼ºÀ´¿ª·¢Ò»¸ö¸ßÖÊÁ¿µÄ¼ÆËã»úÅÅ°æÏµÍ³£¬ÕâÑù¾ÍÓÐÁË TeX¡£
 
@@ -11,14 +11,14 @@ TeXµÄÔ´³ÌÐòÊÇÓÃ Pascal Ð´³ÉµÄ£¬Ô­ÒòÊÇ Knuth Ï£Íû TeX¾¡¿ÉÄÜ·½±ãµØÒÆÖ²µ½ÆäËü µÄ²Ù×
 
 TeXµÄÁíÒ»¸öÖØÒªµÄÌØÕ÷¾ÍÊÇËüµÄÊä³öÊÇÓëÉè±¸ÎÞ¹ØµÄ¡£TeXµÄÊä³öÎÄ¼þ³ÆÎª DVI ÎÄ ¼þ£¬¼´ÊÇ¡°Device Independent¡±¡£Ò»µ© TeX´¦ÀíÁËÄãµÄÎÄ¼þ£¬ÄãËùµÃµ½µÄ DVI ÎÄ¼þ¾Í¿É ÒÔ±»ËÍµ½ÈÎºÎÊä³öÉè±¸Èç´òÓ¡»ú£¬ÆÁÄ»µÈ²¢ÇÒ×Ü»áµÃµ½ÏàÍ¬µÄ½á¹û£¬¶øÕâÓëÕâÐ©Êä³öÉè±¸µÄ ÏÞÖÆÃ»ÓÐÈÎºÎ¹ØÏµ¡£ÕâËµÃ÷ DVI ÎÄ¼þÖÐËùÓÐµÄÔªËØ£¬´ÓÒ³ÃæÉèÖÃµ½ÎÄ±¾ÖÐ×Ö·ûµÄÎ»ÖÃ¶¼±» ¹Ì¶¨£¬²»ÄÜ¸ü¸Ä¡£
 
-# TeXÏµÍ³£¨·¢ÐÐ°æ±¾£©
+### TeXÏµÍ³£¨·¢ÐÐ°æ±¾£©
 TeXÏµÍ³ÊÇ¼¯³ÉÁË±àÒë (La)TeX ÎÄµµËùÐèµÄÈí¼þºÍºê°üµÄÏµÍ³¡£³£ÓÃµÄ°üÀ¨£º
 
 - MikTeX¡£MiKTeX ÊÇ Windows ÏÂ×îºÃÓÃµÄ TeXÏµÍ³¡£ÍøÖ·£º http://www.miktex.org »ò http://miktex.sourceforge.net
 - TeXLive¡£TeXLive ÊÇÓÉ¹ú¼Ê TeXÓÃ»§×éÖ¯ TUG ¿ª·¢µÄ TeXÏµÍ³£¬**Ö§³Ö²»Í¬µÄ²Ù×÷ÏµÍ³Æ½Ì¨£¨ÕâÒ»µã°ô¼«ÁË£©**¡£Æä Windows °æ±¾ÓÖ³Æ fpTeX £¬ Unix/Linux °æ±¾¼´ÖøÃûµÄ teTeX ¡£ÍøÖ·£ºhttp://tug.org/texlive/
 - CTeX¡£CTeX ÖÐÎÄÌ××°ÊÇ»ùÓÚ Windows ÏÂµÄ MiKTeX ÏµÍ³£¬¼¯³ÉÁË±à¼­Æ÷ WinEdt ºÍ PostScript ´¦ÀíÈí¼þ Ghostscript ºÍ GSview µÈÖ÷Òª¹¤¾ß¡£ CTeX ÖÐÎÄÌ××°ÔÚ MiKTeX µÄ»ù´¡ÉÏÔö¼ÓÁË¶ÔÖÐÎÄµÄÍêÕûÖ§³Ö¡£ CTeX ÖÐÎÄÌ××°Ö§³Ö CJK, xeCJK, CCT, TY µÈ¶àÖÖ ÖÐÎÄ TeX´¦Àí·½Ê½¡£ÍøÖ·£ºhttp://www.ctex.org
 
-# [ÒýÇæ£¨±àÒëÆ÷£©](https://www.overleaf.com/learn/latex/Articles/The_TeX_family_tree:_LaTeX,_pdfTeX,_XeTeX,_LuaTeX_and_ConTeXt)
+### [ÒýÇæ£¨±àÒëÆ÷£©](https://www.overleaf.com/learn/latex/Articles/The_TeX_family_tree:_LaTeX,_pdfTeX,_XeTeX,_LuaTeX_and_ConTeXt)
 ÒýÇæÊÇÕæÕý¸É»îµÄ³ÌÐò¡£ÒýÇæµÄ»ù±¾¹¦ÄÜ¾ÍÊÇ½âÊÍTeXÓï·¨£¬°Ñ×ÖÅÅ³ÉÐÐ£¬°ÑÐÐÅÅ³ÉÒ³£¬Éæ¼°µ½¶Ï×Ö¡¢¶ÏÐÐ¡¢·ÖÒ³µÈËã·¨¡£×îÔ­Ê¼µÄÒýÇæÊÇTeX¡£
 
 - TeX£º1978ÄêÓÉDonald Erwin Knuth¿ª·¢¡£ÊÇºóÀ´´ó²¿·ÖTeXÏà¹ØµÄ»ù´¡¡£ÆäÉú³ÉdviÎÄ¼þ£¬È»ºó¾­ÓÉÆäËû³ÌÐò×ª»»ÎªpdfÎÄ¼þ¡£
@@ -29,5 +29,12 @@ TeXÏµÍ³ÊÇ¼¯³ÉÁË±àÒë (La)TeX ÎÄµµËùÐèµÄÈí¼þºÍºê°üµÄÏµÍ³¡£³£ÓÃµÄ°üÀ¨£º
 ¹ØÓÚXeTexºÍLuaTexµÄÑ¡Ôñ£º*ÏÖÊµµÄ¶àÊýÇé¿öÏÂ£¬LuaTeX ±È XeTeX ¸üÂý£¬¶ø¹¦ÄÜÃ»Ê²Ã´²î±ð¡£*
 LuaTexºËÐÄµÄÓÅÊÆÊÇÄÚÇ¶LuaÓïÑÔ£¬¼ÆËãÄÜÁ¦ºÍÀ©Õ¹ÐÔ¸üÇ¿£¬µ«¸ÃÓÅÊÆÀûÓÃÂÊºÜµÍ£¬¶øÇÒÔËÐÐÆðÀ´ÄãµÄ»ú×ÓÐÔÄÜ²»Ò»¶¨¹»¡£LuaTeXµÄ»°£¬ÓÃÆðÀ´µÄ¸Ð¾õ¾ÍÊÇËµ²»¶¨Ê²Ã´Ê±ºò¾ÍÍ»È»¼ä±ÀµôÁË¡£¶øXeTeX£¬µ«¾Í¿ª·¢ÉÏÀ´Ëµ£¬Õâ¼¸ÄêÒ²Ã»ÓÐÌ«´óµÄ±ä»¯£¬ÓÉÓÚ×ÖÌå»º´æ»úÖÆµÄÎÊÌâ£¬ÔÚWindowsÉÏÅ¼¶û»áÈÃÈËºÜÄÕ»ð¡£
 
-# TeX³ýÁË±à¼­ÂÛÎÄ»¹ÄÜ×öÊ²Ã´£¿
+### TeX³ýÁË±à¼­ÂÛÎÄ»¹ÄÜ×öÊ²Ã´£¿
 TeXÊÇÒ»¸ö·Ç³£¶à²Å¶àÒÕµÄ³ÌÐò¡£Ëü²»µ«¿ÉÒÔ±à¼­ÂÛÎÄ£¬Êé¼®£¬»ÃµÆÆ¬£¬Ñ§ÊõÔÓÖ¾£¬¸öÈË¼ò Àú£¬»¹¿ÉÒÔ ±à¼­ÀÖÆ×£¬»¯Ñ§·Ö×ÓÍ¼£¬µçÂ·Í¼£¬¹ú¼ÊÏóÆå£¬ÖÐ¹úÏóÆå£¬ÉõÖÁÎ§ÆåÆåÆ×£¬¡­¡­ÊÂÊµÉÏÖ»ÓÐÉÙ Á¿ÎÄµµ²»ÊÊºÏÓÃ TeX±à¼­¡£
+
+### ²¿·Ö×ÊÔ´
+[ÊÖ°ÑÊÖ½ÌÄãÓÃLaTeXÐ´×÷²©Ê¿ÂÛÎÄ¡ª¡ªNicola L. C. Talbot][1]
+[ÕÂ½Ú±êÌâÅÅ°æºê°ü][2]
+
+[1]:https://mp.weixin.qq.com/s?__biz=MzAxNjI3Mzc3Mw==&mid=2652773033&idx=1&sn=007ae6bb8c3f26b66bddb0ddb112ca58&chksm=801de2abb76a6bbdd92bf576d59ce94b7bc458f3e34b7163937a32a215262c76a9be3d1b59a9&mpshare=1&scene=24&srcid=09089mUT0Tb1wOsi0EfYYlzF#rd
+[2]:https://mp.weixin.qq.com/s?__biz=MzAxNjI3Mzc3Mw==&mid=2652773067&idx=1&sn=d6e40ab83c5dfc1f5b4ca114dd7a8786&chksm=801de2c9b76a6bdfc1b45ad820632afd8e672be4a3137081a8e56b9fb4812e8b783192778e47&mpshare=1&scene=24&srcid=0908BS4VnswQpfLZCnqjr01Y#rd
