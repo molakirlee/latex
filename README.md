@@ -32,9 +32,18 @@ LuaTexºËĞÄµÄÓÅÊÆÊÇÄÚÇ¶LuaÓïÑÔ£¬¼ÆËãÄÜÁ¦ºÍÀ©Õ¹ĞÔ¸üÇ¿£¬µ«¸ÃÓÅÊÆÀûÓÃÂÊºÜµÍ£¬¶øÇÒÔËĞ
 ### TeX³ıÁË±à¼­ÂÛÎÄ»¹ÄÜ×öÊ²Ã´£¿
 TeXÊÇÒ»¸ö·Ç³£¶à²Å¶àÒÕµÄ³ÌĞò¡£Ëü²»µ«¿ÉÒÔ±à¼­ÂÛÎÄ£¬Êé¼®£¬»ÃµÆÆ¬£¬Ñ§ÊõÔÓÖ¾£¬¸öÈË¼ò Àú£¬»¹¿ÉÒÔ ±à¼­ÀÖÆ×£¬»¯Ñ§·Ö×ÓÍ¼£¬µçÂ·Í¼£¬¹ú¼ÊÏóÆå£¬ÖĞ¹úÏóÆå£¬ÉõÖÁÎ§ÆåÆåÆ×£¬¡­¡­ÊÂÊµÉÏÖ»ÓĞÉÙ Á¿ÎÄµµ²»ÊÊºÏÓÃ TeX±à¼­¡£
 
-### ²¿·Ö×ÊÔ´
+### Ïà¹ØÔÄ¶Á
 [ÊÖ°ÑÊÖ½ÌÄãÓÃLaTeXĞ´×÷²©Ê¿ÂÛÎÄ¡ª¡ªNicola L. C. Talbot][1]  
 [ÕÂ½Ú±êÌâÅÅ°æºê°ü][2]
 
 [1]:https://mp.weixin.qq.com/s?__biz=MzAxNjI3Mzc3Mw==&mid=2652773033&idx=1&sn=007ae6bb8c3f26b66bddb0ddb112ca58&chksm=801de2abb76a6bbdd92bf576d59ce94b7bc458f3e34b7163937a32a215262c76a9be3d1b59a9&mpshare=1&scene=24&srcid=09089mUT0Tb1wOsi0EfYYlzF#rd
 [2]:https://mp.weixin.qq.com/s?__biz=MzAxNjI3Mzc3Mw==&mid=2652773067&idx=1&sn=d6e40ab83c5dfc1f5b4ca114dd7a8786&chksm=801de2c9b76a6bdfc1b45ad820632afd8e672be4a3137081a8e56b9fb4812e8b783192778e47&mpshare=1&scene=24&srcid=0908BS4VnswQpfLZCnqjr01Y#rd
+
+### Nice Model
+**Êé¼®Ä£°å**  
+[»¹Ô­¾­µäÑùÊ½µÄD&D 5e LaTeXÄ£°å](http://www.latexstudio.net/archives/6865.html)  
+[Ò»¸ö²»Ö¹ÓÚ¾«ÖÂµÄLaTeXÊé¼®Ä£°å](http://www.latexstudio.net/archives/51443.html)  
+**¼òÀúÄ£°å***  
+[ÈçºÎĞ´Ñ§Êõ¼òÀú](https://mp.weixin.qq.com/s?__biz=MzA5NDkzNjIwMg==&mid=2651668319&idx=1&sn=03af642157e17d4ac3cdc61ae688c655&chksm=8bbe92babcc91bac9556c5c99173a3de237d553cd4192f3d5fbc325266b6bea25ac9559dd2cf&mpshare=1&scene=24&srcid=0208OjKIGqdgtxF2QWYFMhb2#rd)  
+[ÁÖÁ«Ö¦µÄ¼òÀúLaTeXÄ£°å](http://www.latexstudio.net/archives/7498.html)  
+[moderncv¶¨ÖÆµÄÃÀÃÀµÄ¼òÀú](http://www.latexstudio.net/archives/11760.html)  
