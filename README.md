@@ -44,6 +44,6 @@ TeX是一个非常多才多艺的程序。它不但可以编辑论文，书籍，幻灯片，学术杂志，个人简 
 [还原经典样式的D&D 5e LaTeX模板](http://www.latexstudio.net/archives/6865.html)  
 [一个不止于精致的LaTeX书籍模板](http://www.latexstudio.net/archives/51443.html)  
 **简历模板***  
-[如何写学术简历](https://mp.weixin.qq.com/s?__biz=MzA5NDkzNjIwMg==&mid=2651668319&idx=1&sn=03af642157e17d4ac3cdc61ae688c655&chksm=8bbe92babcc91bac9556c5c99173a3de237d553cd4192f3d5fbc325266b6bea25ac9559dd2cf&mpshare=1&scene=24&srcid=0208OjKIGqdgtxF2QWYFMhb2#rd)  
 [林莲枝的简历LaTeX模板](http://www.latexstudio.net/archives/7498.html)  
 [moderncv定制的美美的简历](http://www.latexstudio.net/archives/11760.html)  
+[简历会说话！全面而细致的三栏式简历](http://www.latexstudio.net/archives/51442.html)  
