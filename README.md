@@ -47,3 +47,6 @@ TeX是一个非常多才多艺的程序。它不但可以编辑论文，书籍，幻灯片，学术杂志，个人简 
 [林莲枝的简历LaTeX模板](http://www.latexstudio.net/archives/7498.html)  
 [moderncv定制的美美的简历](http://www.latexstudio.net/archives/11760.html)  
 [简历会说话！全面而细致的三栏式简历](http://www.latexstudio.net/archives/51442.html)  
+**学术海报**  
+[深蓝紫色设备海报](http://www.latexstudio.net/archives/351.html)  
+[淡蓝色海报](http://www.latexstudio.net/archives/5448.html)  
