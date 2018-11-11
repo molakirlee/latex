@@ -32,6 +32,9 @@ LuaTexºËÐÄµÄÓÅÊÆÊÇÄÚÇ¶LuaÓïÑÔ£¬¼ÆËãÄÜÁ¦ºÍÀ©Õ¹ÐÔ¸üÇ¿£¬µ«¸ÃÓÅÊÆÀûÓÃÂÊºÜµÍ£¬¶øÇÒÔËÐ
 ### TeX³ýÁË±à¼­ÂÛÎÄ»¹ÄÜ×öÊ²Ã´£¿
 TeXÊÇÒ»¸ö·Ç³£¶à²Å¶àÒÕµÄ³ÌÐò¡£Ëü²»µ«¿ÉÒÔ±à¼­ÂÛÎÄ£¬Êé¼®£¬»ÃµÆÆ¬£¬Ñ§ÊõÔÓÖ¾£¬¸öÈË¼ò Àú£¬»¹¿ÉÒÔ ±à¼­ÀÖÆ×£¬»¯Ñ§·Ö×ÓÍ¼£¬µçÂ·Í¼£¬¹ú¼ÊÏóÆå£¬ÖÐ¹úÏóÆå£¬ÉõÖÁÎ§ÆåÆåÆ×£¬¡­¡­ÊÂÊµÉÏÖ»ÓÐÉÙ Á¿ÎÄµµ²»ÊÊºÏÓÃ TeX±à¼­¡£
 
+### ¼¼ÇÉ²¹³ä
+[blockÌí¼Ó±ß¿ò](https://tex.stackexchange.com/questions/11211/can-i-have-framed-blocks-in-beamer)£¬¿É²Î¿¼tcolorboxµÄ[Manual](https://mirror.hmc.edu/ctan/macros/latex/contrib/tcolorbox/tcolorbox.pdf)  
+
 ### Ïà¹ØÔÄ¶Á
 [ÊÖ°ÑÊÖ½ÌÄãÓÃLaTeXÐ´×÷²©Ê¿ÂÛÎÄ¡ª¡ªNicola L. C. Talbot][1]  
 [ÕÂ½Ú±êÌâÅÅ°æºê°ü][2]
