@@ -18,6 +18,8 @@ TeX系统是集成了编译 (La)TeX 文档所需的软件和宏包的系统。常用的包括：
 - TeXLive。TeXLive 是由国际 TeX用户组织 TUG 开发的 TeX系统，**支持不同的操作系统平台（这一点棒极了）**。其 Windows 版本又称 fpTeX ， Unix/Linux 版本即著名的 teTeX 。网址：http://tug.org/texlive/
 - CTeX。CTeX 中文套装是基于 Windows 下的 MiKTeX 系统，集成了编辑器 WinEdt 和 PostScript 处理软件 Ghostscript 和 GSview 等主要工具。 CTeX 中文套装在 MiKTeX 的基础上增加了对中文的完整支持。 CTeX 中文套装支持 CJK, xeCJK, CCT, TY 等多种 中文 TeX处理方式。网址：http://www.ctex.org
 
+对于任何阶段的 TeX 用户，这里都推荐安装 TeX Live 这一发行版。若你使用 macOS，则推荐安装基于 TeX Live 开发的 macTeX 这一发行版。**注意：不推荐 CTeX 发行版。没有理由，不听解释。**[参考：TeX 引擎、格式、发行版之介绍](http://www.latexstudio.net/archives/51537.html)
+
 ### [引擎（编译器）](https://www.overleaf.com/learn/latex/Articles/The_TeX_family_tree:_LaTeX,_pdfTeX,_XeTeX,_LuaTeX_and_ConTeXt)
 引擎是真正干活的程序。引擎的基本功能就是解释TeX语法，把字排成行，把行排成页，涉及到断字、断行、分页等算法。最原始的引擎是TeX。
 
