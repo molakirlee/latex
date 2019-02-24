@@ -51,7 +51,7 @@
 %----------------首页--------------------
 %----------------------------------------
 \MyLogo{\pgfputat{\pgfxy(-0.5,7.7)}{\pgfbox[right,base]{\includegraphics[height=0.7cm]{TJUlogo.png}}}}  % Put the logo in the upper right
-\title{Study and Application on the Underwater Bionic Surface Adhesion and Anti-Adhesion}
+\title{Study and Application on the Underwater Bionic Surface Adhesion and Anti-Fouling}
 \author{Li Chuanxi} 
 \institute{School of Chemical Engineering and Technology\\
 Tianjin University\\[1ex]

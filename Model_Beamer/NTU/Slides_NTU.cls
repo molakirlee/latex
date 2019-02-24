@@ -188,7 +188,7 @@
 %----------------------------------------
 %---------------标题页-------------------
 %----------------------------------------
-\title[XiLock->I cannot live without brain-work. What else is there to live for? ——《The Sign of Four》]{\textbf{Study and Application on the Underwater Bionic Surface Adhesion and Anti-Adhesion}}
+\title[XiLock->I cannot live without brain-work. What else is there to live for? ——《The Sign of Four》]{\textbf{Study and Application on the Underwater Bionic Surface Adhesion and Anti-Fouling}}
 \subtitle{\textbf{A short presentation}}
 \author[Li Chuanxi]{Li Chuanxi\inst{1,2}}
 

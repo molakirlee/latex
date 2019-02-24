@@ -46,6 +46,23 @@ BSA&4.7\\
 \end{table}
 %----------------
 %----------------
+%表格超出边框的处理
+%
+%表格超出边框的效果，表格用黑框显示'\rule{1.1\linewidth}{3cm}'
+\begin{table}[!htb]
+\centering
+\caption{Oh, this table is overfull!}\label{tab:overfull}
+\rule{1.1\linewidth}{3cm}
+\end{table}
+%处理后的效果
+\begin{table}[!htb]
+\centering
+\caption{Imagine that this is a table.}\label{tab:resized}
+\resizebox{\linewidth}{!}{\rule{1.1\linewidth}{3cm}}
+\end{table}
+
+%----------------
+%----------------
 %中文输入
 \usepackage{CJKutf8}%引入CJKutf8包
 \begin{CJK*}{UTF8}{bsmi}%添加中文简体环境
