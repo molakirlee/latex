@@ -1,0 +1,13 @@
+del XiLock_thesis_report.aux
+del XiLock_thesis_report.bbl
+del XiLock_thesis_report.blg
+del XiLock_thesis_report.log
+del XiLock_thesis_report.nav
+del XiLock_thesis_report.out
+del XiLock_thesis_report.run.xml
+del XiLock_thesis_report.snm
+del XiLock_thesis_report.synctex.*
+del XiLock_thesis_report.toc
+del XiLock_thesis_report-blx.bib
+del pp*.aux
+del *.vrb

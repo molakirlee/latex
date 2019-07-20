@@ -1,6 +1,23 @@
 ### 写在前面的话
 整理了一下自己常用的Model放在这里以便取用
 
+### Trouble Killer
+先把之间遇到的问题写一下:
+###### 中文排版
+文档的中文编译参考[LaTeX中文排版（使用XeTeX）](http://linux-wiki.cn/wiki/LaTeX%E4%B8%AD%E6%96%87%E6%8E%92%E7%89%88%EF%BC%88%E4%BD%BF%E7%94%A8XeTeX%EF%BC%89)即可。  
+
+
+###### 代码块
+使用宏包`\usepackage{listings}`和
+```
+\begin{lstlisting}
+\end{lstlisting}
+```
+可实现代码块的插入，但是在Beamer中使用lstlisting环境时必须在`\begin{frame}`后加`[fragile]`，即：`\begin{frame}[fragile]`，这是因为`lstlisting`环境是verbatim的。  
+ “beamer-frames can't handle verbatim environment (and listings is a kind of verbatim). If a frame contains a verbatim (or listings)-environment, the frame must contain the option fragile. ”
+ 参考：{链接}(https://tex.stackexchange.com/questions/130109/cant-insert-code-in-my-beamer-slide)  
+
+
 好吧，顺便也介绍一下Latex
 
 ### TeX 的诞生与发展
@@ -30,6 +47,8 @@ TeX系统是集成了编译 (La)TeX 文档所需的软件和宏包的系统。常用的包括：
 
 关于XeTex和LuaTex的选择：*现实的多数情况下，LuaTeX 比 XeTeX 更慢，而功能没什么差别。*
 LuaTex核心的优势是内嵌Lua语言，计算能力和扩展性更强，但该优势利用率很低，而且运行起来你的机子性能不一定够。LuaTeX的话，用起来的感觉就是说不定什么时候就突然间崩掉了。而XeTeX，但就开发上来说，这几年也没有太大的变化，由于字体缓存机制的问题，在Windows上偶尔会让人很恼火。
+***一般情况下，英文用pdfLaTex编译，中文用XeLaTex编译。***
+
 
 ### TeX除了编辑论文还能做什么？
 TeX是一个非常多才多艺的程序。它不但可以编辑论文，书籍，幻灯片，学术杂志，个人简 历，还可以 编辑乐谱，化学分子图，电路图，国际象棋，中国象棋，甚至围棋棋谱，……事实上只有少 量文档不适合用 TeX编辑。
@@ -40,10 +59,11 @@ TeX是一个非常多才多艺的程序。它不但可以编辑论文，书籍，幻灯片，学术杂志，个人简 
 ### 相关阅读
 [手把手教你用LaTeX写作博士论文——Nicola L. C. Talbot][1]  
 [章节标题排版宏包][2]
+[Beamer快速入门-中译本-黄旭华老师翻译][3]
 
 [1]:https://mp.weixin.qq.com/s?__biz=MzAxNjI3Mzc3Mw==&mid=2652773033&idx=1&sn=007ae6bb8c3f26b66bddb0ddb112ca58&chksm=801de2abb76a6bbdd92bf576d59ce94b7bc458f3e34b7163937a32a215262c76a9be3d1b59a9&mpshare=1&scene=24&srcid=09089mUT0Tb1wOsi0EfYYlzF#rd
 [2]:https://mp.weixin.qq.com/s?__biz=MzAxNjI3Mzc3Mw==&mid=2652773067&idx=1&sn=d6e40ab83c5dfc1f5b4ca114dd7a8786&chksm=801de2c9b76a6bdfc1b45ad820632afd8e672be4a3137081a8e56b9fb4812e8b783192778e47&mpshare=1&scene=24&srcid=0908BS4VnswQpfLZCnqjr01Y#rd
-
+[3]:http://www.latexstudio.net/archives/51706.html
 ### Nice Model
 **书籍模板**  
 [还原经典样式的D&D 5e LaTeX模板](http://www.latexstudio.net/archives/6865.html)  
