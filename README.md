@@ -15,7 +15,7 @@
 ```
 可实现代码块的插入，但是在Beamer中使用lstlisting环境时必须在`\begin{frame}`后加`[fragile]`，即：`\begin{frame}[fragile]`，这是因为`lstlisting`环境是verbatim的。  
  “beamer-frames can't handle verbatim environment (and listings is a kind of verbatim). If a frame contains a verbatim (or listings)-environment, the frame must contain the option fragile. ”
- 参考：{链接}(https://tex.stackexchange.com/questions/130109/cant-insert-code-in-my-beamer-slide)  
+ 参考：[链接](https://tex.stackexchange.com/questions/130109/cant-insert-code-in-my-beamer-slide)  
 
 
 好吧，顺便也介绍一下Latex
