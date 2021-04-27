@@ -1,77 +1,81 @@
-### Ğ´ÔÚÇ°ÃæµÄ»°
-ÕûÀíÁËÒ»ÏÂ×Ô¼º³£ÓÃµÄModel·ÅÔÚÕâÀïÒÔ±ãÈ¡ÓÃ
+### å†™åœ¨å‰é¢çš„è¯
+æ•´ç†äº†ä¸€ä¸‹è‡ªå·±å¸¸ç”¨çš„Modelæ”¾åœ¨è¿™é‡Œä»¥ä¾¿å–ç”¨
 
 ### Trouble Killer
-ÏÈ°ÑÖ®¼äÓöµ½µÄÎÊÌâĞ´Ò»ÏÂ:
-###### ÖĞÎÄÅÅ°æ
-ÎÄµµµÄÖĞÎÄ±àÒë²Î¿¼[LaTeXÖĞÎÄÅÅ°æ£¨Ê¹ÓÃXeTeX£©](http://linux-wiki.cn/wiki/LaTeX%E4%B8%AD%E6%96%87%E6%8E%92%E7%89%88%EF%BC%88%E4%BD%BF%E7%94%A8XeTeX%EF%BC%89)¼´¿É¡£  
+å…ˆæŠŠä¹‹é—´é‡åˆ°çš„é—®é¢˜å†™ä¸€ä¸‹:
+###### ä¸­æ–‡æ’ç‰ˆ
+æ–‡æ¡£çš„ä¸­æ–‡ç¼–è¯‘å‚è€ƒ[LaTeXä¸­æ–‡æ’ç‰ˆï¼ˆä½¿ç”¨XeTeXï¼‰](http://linux-wiki.cn/wiki/LaTeX%E4%B8%AD%E6%96%87%E6%8E%92%E7%89%88%EF%BC%88%E4%BD%BF%E7%94%A8XeTeX%EF%BC%89)å³å¯ã€‚  
 
 
-###### ´úÂë¿é
-Ê¹ÓÃºê°ü`\usepackage{listings}`ºÍ
+###### ä»£ç å—
+ä½¿ç”¨å®åŒ…`\usepackage{listings}`å’Œ
 ```
 \begin{lstlisting}
 \end{lstlisting}
 ```
-¿ÉÊµÏÖ´úÂë¿éµÄ²åÈë£¬µ«ÊÇÔÚBeamerÖĞÊ¹ÓÃlstlisting»·¾³Ê±±ØĞëÔÚ`\begin{frame}`ºó¼Ó`[fragile]`£¬¼´£º`\begin{frame}[fragile]`£¬ÕâÊÇÒòÎª`lstlisting`»·¾³ÊÇverbatimµÄ¡£  
- ¡°beamer-frames can't handle verbatim environment (and listings is a kind of verbatim). If a frame contains a verbatim (or listings)-environment, the frame must contain the option fragile. ¡±
- ²Î¿¼£º[Á´½Ó](https://tex.stackexchange.com/questions/130109/cant-insert-code-in-my-beamer-slide)  
+å¯å®ç°ä»£ç å—çš„æ’å…¥ï¼Œä½†æ˜¯åœ¨Beamerä¸­ä½¿ç”¨lstlistingç¯å¢ƒæ—¶å¿…é¡»åœ¨`\begin{frame}`ååŠ `[fragile]`ï¼Œå³ï¼š`\begin{frame}[fragile]`ï¼Œè¿™æ˜¯å› ä¸º`lstlisting`ç¯å¢ƒæ˜¯verbatimçš„ã€‚  
+ â€œbeamer-frames can't handle verbatim environment (and listings is a kind of verbatim). If a frame contains a verbatim (or listings)-environment, the frame must contain the option fragile. â€
+ å‚è€ƒï¼š[é“¾æ¥](https://tex.stackexchange.com/questions/130109/cant-insert-code-in-my-beamer-slide)  
 
 
-ºÃ°É£¬Ë³±ãÒ²½éÉÜÒ»ÏÂLatex
+å¥½å§ï¼Œé¡ºä¾¿ä¹Ÿä»‹ç»ä¸€ä¸‹Latex
 
-### TeX µÄµ®ÉúÓë·¢Õ¹
+### TeX çš„è¯ç”Ÿä¸å‘å±•
 
-ÆßÊ®Äê´úÄ©£¬Donald E. Knuth£¨¸ßµÂÄÉ£©ÔÚ¿´µ½Æä¶à¾í¾ŞÖø¡°The Art of Computer Programming¡±µÚ¶ş¾íµÄĞ£ÑùÊ±£¬¶ÔÓÉ¼ÆËã»úÅÅ°æµÄĞ£ÑùµÄµÍÖÊÁ¿¸Ğµ½ÎŞ·¨ÈÌÊÜ¡£Òò´Ë¾ö¶¨×Ô ¼ºÀ´¿ª·¢Ò»¸ö¸ßÖÊÁ¿µÄ¼ÆËã»úÅÅ°æÏµÍ³£¬ÕâÑù¾ÍÓĞÁË TeX¡£
+ä¸ƒåå¹´ä»£æœ«ï¼ŒDonald E. Knuthï¼ˆé«˜å¾·çº³ï¼‰åœ¨çœ‹åˆ°å…¶å¤šå·å·¨è‘—â€œThe Art of Computer Programmingâ€ç¬¬äºŒå·çš„æ ¡æ ·æ—¶ï¼Œå¯¹ç”±è®¡ç®—æœºæ’ç‰ˆçš„æ ¡æ ·çš„ä½è´¨é‡æ„Ÿåˆ°æ— æ³•å¿å—ã€‚å› æ­¤å†³å®šè‡ª å·±æ¥å¼€å‘ä¸€ä¸ªé«˜è´¨é‡çš„è®¡ç®—æœºæ’ç‰ˆç³»ç»Ÿï¼Œè¿™æ ·å°±æœ‰äº† TeXã€‚
 
-TeXµÄÔ´³ÌĞòÊÇÓÃ Pascal Ğ´³ÉµÄ£¬Ô­ÒòÊÇ Knuth Ï£Íû TeX¾¡¿ÉÄÜ·½±ãµØÒÆÖ²µ½ÆäËü µÄ²Ù×÷ÏµÍ³ÖĞÈ¥¡£µ±Ê± Pascal ÊÇ×îÊÊºÏÓÚÕâÒ»ÒªÇóµÄ±à³ÌÓïÑÔ¡£ÕâÒ²Ê¹µÃ TeXÏÖÔÚÒÑ¾­ ÔÚ¼¸ºõËùÓĞµÄ¼ÆËã»úÏµÍ³ÖĞµÃµ½ÊµÏÖ¡£
+TeXçš„æºç¨‹åºæ˜¯ç”¨ Pascal å†™æˆçš„ï¼ŒåŸå› æ˜¯ Knuth å¸Œæœ› TeXå°½å¯èƒ½æ–¹ä¾¿åœ°ç§»æ¤åˆ°å…¶å®ƒ çš„æ“ä½œç³»ç»Ÿä¸­å»ã€‚å½“æ—¶ Pascal æ˜¯æœ€é€‚åˆäºè¿™ä¸€è¦æ±‚çš„ç¼–ç¨‹è¯­è¨€ã€‚è¿™ä¹Ÿä½¿å¾— TeXç°åœ¨å·²ç» åœ¨å‡ ä¹æ‰€æœ‰çš„è®¡ç®—æœºç³»ç»Ÿä¸­å¾—åˆ°å®ç°ã€‚
 
-TeXµÄÁíÒ»¸öÖØÒªµÄÌØÕ÷¾ÍÊÇËüµÄÊä³öÊÇÓëÉè±¸ÎŞ¹ØµÄ¡£TeXµÄÊä³öÎÄ¼ş³ÆÎª DVI ÎÄ ¼ş£¬¼´ÊÇ¡°Device Independent¡±¡£Ò»µ© TeX´¦ÀíÁËÄãµÄÎÄ¼ş£¬ÄãËùµÃµ½µÄ DVI ÎÄ¼ş¾Í¿É ÒÔ±»ËÍµ½ÈÎºÎÊä³öÉè±¸Èç´òÓ¡»ú£¬ÆÁÄ»µÈ²¢ÇÒ×Ü»áµÃµ½ÏàÍ¬µÄ½á¹û£¬¶øÕâÓëÕâĞ©Êä³öÉè±¸µÄ ÏŞÖÆÃ»ÓĞÈÎºÎ¹ØÏµ¡£ÕâËµÃ÷ DVI ÎÄ¼şÖĞËùÓĞµÄÔªËØ£¬´ÓÒ³ÃæÉèÖÃµ½ÎÄ±¾ÖĞ×Ö·ûµÄÎ»ÖÃ¶¼±» ¹Ì¶¨£¬²»ÄÜ¸ü¸Ä¡£
+TeXçš„å¦ä¸€ä¸ªé‡è¦çš„ç‰¹å¾å°±æ˜¯å®ƒçš„è¾“å‡ºæ˜¯ä¸è®¾å¤‡æ— å…³çš„ã€‚TeXçš„è¾“å‡ºæ–‡ä»¶ç§°ä¸º DVI æ–‡ ä»¶ï¼Œå³æ˜¯â€œDevice Independentâ€ã€‚ä¸€æ—¦ TeXå¤„ç†äº†ä½ çš„æ–‡ä»¶ï¼Œä½ æ‰€å¾—åˆ°çš„ DVI æ–‡ä»¶å°±å¯ ä»¥è¢«é€åˆ°ä»»ä½•è¾“å‡ºè®¾å¤‡å¦‚æ‰“å°æœºï¼Œå±å¹•ç­‰å¹¶ä¸”æ€»ä¼šå¾—åˆ°ç›¸åŒçš„ç»“æœï¼Œè€Œè¿™ä¸è¿™äº›è¾“å‡ºè®¾å¤‡çš„ é™åˆ¶æ²¡æœ‰ä»»ä½•å…³ç³»ã€‚è¿™è¯´æ˜ DVI æ–‡ä»¶ä¸­æ‰€æœ‰çš„å…ƒç´ ï¼Œä»é¡µé¢è®¾ç½®åˆ°æ–‡æœ¬ä¸­å­—ç¬¦çš„ä½ç½®éƒ½è¢« å›ºå®šï¼Œä¸èƒ½æ›´æ”¹ã€‚
 
-### TeXÏµÍ³£¨·¢ĞĞ°æ±¾£©
-TeXÏµÍ³ÊÇ¼¯³ÉÁË±àÒë (La)TeX ÎÄµµËùĞèµÄÈí¼şºÍºê°üµÄÏµÍ³¡£³£ÓÃµÄ°üÀ¨£º
+### TeXç³»ç»Ÿï¼ˆå‘è¡Œç‰ˆæœ¬ï¼‰
+TeXç³»ç»Ÿæ˜¯é›†æˆäº†ç¼–è¯‘ (La)TeX æ–‡æ¡£æ‰€éœ€çš„è½¯ä»¶å’Œå®åŒ…çš„ç³»ç»Ÿã€‚å¸¸ç”¨çš„åŒ…æ‹¬ï¼š
 
-- MikTeX¡£MiKTeX ÊÇ Windows ÏÂ×îºÃÓÃµÄ TeXÏµÍ³¡£ÍøÖ·£º http://www.miktex.org »ò http://miktex.sourceforge.net
-- TeXLive¡£TeXLive ÊÇÓÉ¹ú¼Ê TeXÓÃ»§×éÖ¯ TUG ¿ª·¢µÄ TeXÏµÍ³£¬**Ö§³Ö²»Í¬µÄ²Ù×÷ÏµÍ³Æ½Ì¨£¨ÕâÒ»µã°ô¼«ÁË£©**¡£Æä Windows °æ±¾ÓÖ³Æ fpTeX £¬ Unix/Linux °æ±¾¼´ÖøÃûµÄ teTeX ¡£ÍøÖ·£ºhttp://tug.org/texlive/
-- CTeX¡£CTeX ÖĞÎÄÌ××°ÊÇ»ùÓÚ Windows ÏÂµÄ MiKTeX ÏµÍ³£¬¼¯³ÉÁË±à¼­Æ÷ WinEdt ºÍ PostScript ´¦ÀíÈí¼ş Ghostscript ºÍ GSview µÈÖ÷Òª¹¤¾ß¡£ CTeX ÖĞÎÄÌ××°ÔÚ MiKTeX µÄ»ù´¡ÉÏÔö¼ÓÁË¶ÔÖĞÎÄµÄÍêÕûÖ§³Ö¡£ CTeX ÖĞÎÄÌ××°Ö§³Ö CJK, xeCJK, CCT, TY µÈ¶àÖÖ ÖĞÎÄ TeX´¦Àí·½Ê½¡£ÍøÖ·£ºhttp://www.ctex.org
+- MikTeXã€‚MiKTeX æ˜¯ Windows ä¸‹æœ€å¥½ç”¨çš„ TeXç³»ç»Ÿã€‚ç½‘å€ï¼š http://www.miktex.org æˆ– http://miktex.sourceforge.net
+- TeXLiveã€‚TeXLive æ˜¯ç”±å›½é™… TeXç”¨æˆ·ç»„ç»‡ TUG å¼€å‘çš„ TeXç³»ç»Ÿï¼Œ**æ”¯æŒä¸åŒçš„æ“ä½œç³»ç»Ÿå¹³å°ï¼ˆè¿™ä¸€ç‚¹æ£’æäº†ï¼‰**ã€‚å…¶ Windows ç‰ˆæœ¬åˆç§° fpTeX ï¼Œ Unix/Linux ç‰ˆæœ¬å³è‘—åçš„ teTeX ã€‚ç½‘å€ï¼šhttp://tug.org/texlive/
+- CTeXã€‚CTeX ä¸­æ–‡å¥—è£…æ˜¯åŸºäº Windows ä¸‹çš„ MiKTeX ç³»ç»Ÿï¼Œé›†æˆäº†ç¼–è¾‘å™¨ WinEdt å’Œ PostScript å¤„ç†è½¯ä»¶ Ghostscript å’Œ GSview ç­‰ä¸»è¦å·¥å…·ã€‚ CTeX ä¸­æ–‡å¥—è£…åœ¨ MiKTeX çš„åŸºç¡€ä¸Šå¢åŠ äº†å¯¹ä¸­æ–‡çš„å®Œæ•´æ”¯æŒã€‚ CTeX ä¸­æ–‡å¥—è£…æ”¯æŒ CJK, xeCJK, CCT, TY ç­‰å¤šç§ ä¸­æ–‡ TeXå¤„ç†æ–¹å¼ã€‚ç½‘å€ï¼šhttp://www.ctex.org
 
-¶ÔÓÚÈÎºÎ½×¶ÎµÄ TeX ÓÃ»§£¬ÕâÀï¶¼ÍÆ¼ö°²×° TeX Live ÕâÒ»·¢ĞĞ°æ¡£ÈôÄãÊ¹ÓÃ macOS£¬ÔòÍÆ¼ö°²×°»ùÓÚ TeX Live ¿ª·¢µÄ macTeX ÕâÒ»·¢ĞĞ°æ¡£**×¢Òâ£º²»ÍÆ¼ö CTeX ·¢ĞĞ°æ¡£Ã»ÓĞÀíÓÉ£¬²»Ìı½âÊÍ¡£**[²Î¿¼£ºTeX ÒıÇæ¡¢¸ñÊ½¡¢·¢ĞĞ°æÖ®½éÉÜ](http://www.latexstudio.net/archives/51537.html)
+å¯¹äºä»»ä½•é˜¶æ®µçš„ TeX ç”¨æˆ·ï¼Œè¿™é‡Œéƒ½æ¨èå®‰è£… TeX Live è¿™ä¸€å‘è¡Œç‰ˆã€‚è‹¥ä½ ä½¿ç”¨ macOSï¼Œåˆ™æ¨èå®‰è£…åŸºäº TeX Live å¼€å‘çš„ macTeX è¿™ä¸€å‘è¡Œç‰ˆã€‚**æ³¨æ„ï¼šä¸æ¨è CTeX å‘è¡Œç‰ˆã€‚æ²¡æœ‰ç†ç”±ï¼Œä¸å¬è§£é‡Šã€‚**[å‚è€ƒï¼šTeX å¼•æ“ã€æ ¼å¼ã€å‘è¡Œç‰ˆä¹‹ä»‹ç»](http://www.latexstudio.net/archives/51537.html)
 
-### [ÒıÇæ£¨±àÒëÆ÷£©](https://www.overleaf.com/learn/latex/Articles/The_TeX_family_tree:_LaTeX,_pdfTeX,_XeTeX,_LuaTeX_and_ConTeXt)
-ÒıÇæÊÇÕæÕı¸É»îµÄ³ÌĞò¡£ÒıÇæµÄ»ù±¾¹¦ÄÜ¾ÍÊÇ½âÊÍTeXÓï·¨£¬°Ñ×ÖÅÅ³ÉĞĞ£¬°ÑĞĞÅÅ³ÉÒ³£¬Éæ¼°µ½¶Ï×Ö¡¢¶ÏĞĞ¡¢·ÖÒ³µÈËã·¨¡£×îÔ­Ê¼µÄÒıÇæÊÇTeX¡£
+### [å¼•æ“ï¼ˆç¼–è¯‘å™¨ï¼‰](https://www.overleaf.com/learn/latex/Articles/The_TeX_family_tree:_LaTeX,_pdfTeX,_XeTeX,_LuaTeX_and_ConTeXt)
+å¼•æ“æ˜¯çœŸæ­£å¹²æ´»çš„ç¨‹åºã€‚å¼•æ“çš„åŸºæœ¬åŠŸèƒ½å°±æ˜¯è§£é‡ŠTeXè¯­æ³•ï¼ŒæŠŠå­—æ’æˆè¡Œï¼ŒæŠŠè¡Œæ’æˆé¡µï¼Œæ¶‰åŠåˆ°æ–­å­—ã€æ–­è¡Œã€åˆ†é¡µç­‰ç®—æ³•ã€‚æœ€åŸå§‹çš„å¼•æ“æ˜¯TeXã€‚
 
-- TeX£º1978ÄêÓÉDonald Erwin Knuth¿ª·¢¡£ÊÇºóÀ´´ó²¿·ÖTeXÏà¹ØµÄ»ù´¡¡£ÆäÉú³ÉdviÎÄ¼ş£¬È»ºó¾­ÓÉÆäËû³ÌĞò×ª»»ÎªpdfÎÄ¼ş¡£
-- pdfTeX£ºTexÓïÑÔµÄÓÖÒ»¸öÊµÏÖ£¬½«TeX´úÂëÖ±½Ó±àÒë³ÉPDFÎÄ¼ş¡£
-- XeTeX£ºTeX ÓïÑÔµÄĞÂµÄÊµÏÖ£¬Ö§³Ö Unicode ±àÂëºÍÖ±½Ó·ÃÎÊ²Ù×÷ÏµÍ³×ÖÌå¡£
-- LuaTeX£ºTeX ÓïÑÔµÄÒ»¸öÍêÕûµÄÓĞÀ©Õ¹µÄÊµÏÖ¡£LuaTeXÖ§³ÖUnicode¡¢ÏµÍ³×ÖÌåºÍÄÚÇ¶ÓïÑÔÀ©Õ¹£¬ÄÜÖ±½ÓÊä³öPDF¸ñÊ½ÎÄ¼ş£¬Ò²¿ÉÒÔÈÔÈ»Êä³ö DVI ¸ñÊ½¡£
+- TeXï¼š1978å¹´ç”±Donald Erwin Knuthå¼€å‘ã€‚æ˜¯åæ¥å¤§éƒ¨åˆ†TeXç›¸å…³çš„åŸºç¡€ã€‚å…¶ç”Ÿæˆdviæ–‡ä»¶ï¼Œç„¶åç»ç”±å…¶ä»–ç¨‹åºè½¬æ¢ä¸ºpdfæ–‡ä»¶ã€‚
+- pdfTeXï¼šTexè¯­è¨€çš„åˆä¸€ä¸ªå®ç°ï¼Œå°†TeXä»£ç ç›´æ¥ç¼–è¯‘æˆPDFæ–‡ä»¶ã€‚
+- XeTeXï¼šTeX è¯­è¨€çš„æ–°çš„å®ç°ï¼Œæ”¯æŒ Unicode ç¼–ç å’Œç›´æ¥è®¿é—®æ“ä½œç³»ç»Ÿå­—ä½“ã€‚
+- LuaTeXï¼šTeX è¯­è¨€çš„ä¸€ä¸ªå®Œæ•´çš„æœ‰æ‰©å±•çš„å®ç°ã€‚LuaTeXæ”¯æŒUnicodeã€ç³»ç»Ÿå­—ä½“å’Œå†…åµŒè¯­è¨€æ‰©å±•ï¼Œèƒ½ç›´æ¥è¾“å‡ºPDFæ ¼å¼æ–‡ä»¶ï¼Œä¹Ÿå¯ä»¥ä»ç„¶è¾“å‡º DVI æ ¼å¼ã€‚
 
-¹ØÓÚXeTexºÍLuaTexµÄÑ¡Ôñ£º*ÏÖÊµµÄ¶àÊıÇé¿öÏÂ£¬LuaTeX ±È XeTeX ¸üÂı£¬¶ø¹¦ÄÜÃ»Ê²Ã´²î±ğ¡£*
-LuaTexºËĞÄµÄÓÅÊÆÊÇÄÚÇ¶LuaÓïÑÔ£¬¼ÆËãÄÜÁ¦ºÍÀ©Õ¹ĞÔ¸üÇ¿£¬µ«¸ÃÓÅÊÆÀûÓÃÂÊºÜµÍ£¬¶øÇÒÔËĞĞÆğÀ´ÄãµÄ»ú×ÓĞÔÄÜ²»Ò»¶¨¹»¡£LuaTeXµÄ»°£¬ÓÃÆğÀ´µÄ¸Ğ¾õ¾ÍÊÇËµ²»¶¨Ê²Ã´Ê±ºò¾ÍÍ»È»¼ä±ÀµôÁË¡£¶øXeTeX£¬µ«¾Í¿ª·¢ÉÏÀ´Ëµ£¬Õâ¼¸ÄêÒ²Ã»ÓĞÌ«´óµÄ±ä»¯£¬ÓÉÓÚ×ÖÌå»º´æ»úÖÆµÄÎÊÌâ£¬ÔÚWindowsÉÏÅ¼¶û»áÈÃÈËºÜÄÕ»ğ¡£
-***Ò»°ãÇé¿öÏÂ£¬Ó¢ÎÄÓÃpdfLaTex±àÒë£¬ÖĞÎÄÓÃXeLaTex±àÒë¡£***
+å…³äºXeTexå’ŒLuaTexçš„é€‰æ‹©ï¼š*ç°å®çš„å¤šæ•°æƒ…å†µä¸‹ï¼ŒLuaTeX æ¯” XeTeX æ›´æ…¢ï¼Œè€ŒåŠŸèƒ½æ²¡ä»€ä¹ˆå·®åˆ«ã€‚*
+LuaTexæ ¸å¿ƒçš„ä¼˜åŠ¿æ˜¯å†…åµŒLuaè¯­è¨€ï¼Œè®¡ç®—èƒ½åŠ›å’Œæ‰©å±•æ€§æ›´å¼ºï¼Œä½†è¯¥ä¼˜åŠ¿åˆ©ç”¨ç‡å¾ˆä½ï¼Œè€Œä¸”è¿è¡Œèµ·æ¥ä½ çš„æœºå­æ€§èƒ½ä¸ä¸€å®šå¤Ÿã€‚LuaTeXçš„è¯ï¼Œç”¨èµ·æ¥çš„æ„Ÿè§‰å°±æ˜¯è¯´ä¸å®šä»€ä¹ˆæ—¶å€™å°±çªç„¶é—´å´©æ‰äº†ã€‚è€ŒXeTeXï¼Œä½†å°±å¼€å‘ä¸Šæ¥è¯´ï¼Œè¿™å‡ å¹´ä¹Ÿæ²¡æœ‰å¤ªå¤§çš„å˜åŒ–ï¼Œç”±äºå­—ä½“ç¼“å­˜æœºåˆ¶çš„é—®é¢˜ï¼Œåœ¨Windowsä¸Šå¶å°”ä¼šè®©äººå¾ˆæ¼ç«ã€‚
+***ä¸€èˆ¬æƒ…å†µä¸‹ï¼Œè‹±æ–‡ç”¨pdfLaTexç¼–è¯‘ï¼Œä¸­æ–‡ç”¨XeLaTexç¼–è¯‘ã€‚***
 
 
-### TeX³ıÁË±à¼­ÂÛÎÄ»¹ÄÜ×öÊ²Ã´£¿
-TeXÊÇÒ»¸ö·Ç³£¶à²Å¶àÒÕµÄ³ÌĞò¡£Ëü²»µ«¿ÉÒÔ±à¼­ÂÛÎÄ£¬Êé¼®£¬»ÃµÆÆ¬£¬Ñ§ÊõÔÓÖ¾£¬¸öÈË¼ò Àú£¬»¹¿ÉÒÔ ±à¼­ÀÖÆ×£¬»¯Ñ§·Ö×ÓÍ¼£¬µçÂ·Í¼£¬¹ú¼ÊÏóÆå£¬ÖĞ¹úÏóÆå£¬ÉõÖÁÎ§ÆåÆåÆ×£¬¡­¡­ÊÂÊµÉÏÖ»ÓĞÉÙ Á¿ÎÄµµ²»ÊÊºÏÓÃ TeX±à¼­¡£
+### TeXé™¤äº†ç¼–è¾‘è®ºæ–‡è¿˜èƒ½åšä»€ä¹ˆï¼Ÿ
+TeXæ˜¯ä¸€ä¸ªéå¸¸å¤šæ‰å¤šè‰ºçš„ç¨‹åºã€‚å®ƒä¸ä½†å¯ä»¥ç¼–è¾‘è®ºæ–‡ï¼Œä¹¦ç±ï¼Œå¹»ç¯ç‰‡ï¼Œå­¦æœ¯æ‚å¿—ï¼Œä¸ªäººç®€ å†ï¼Œè¿˜å¯ä»¥ ç¼–è¾‘ä¹è°±ï¼ŒåŒ–å­¦åˆ†å­å›¾ï¼Œç”µè·¯å›¾ï¼Œå›½é™…è±¡æ£‹ï¼Œä¸­å›½è±¡æ£‹ï¼Œç”šè‡³å›´æ£‹æ£‹è°±ï¼Œâ€¦â€¦äº‹å®ä¸Šåªæœ‰å°‘ é‡æ–‡æ¡£ä¸é€‚åˆç”¨ TeXç¼–è¾‘ã€‚
 
-### ¼¼ÇÉ²¹³ä
-[blockÌí¼Ó±ß¿ò](https://tex.stackexchange.com/questions/11211/can-i-have-framed-blocks-in-beamer)£¬¿É²Î¿¼tcolorboxµÄ[Manual](https://mirror.hmc.edu/ctan/macros/latex/contrib/tcolorbox/tcolorbox.pdf)  
+### æŠ€å·§è¡¥å……
+[blockæ·»åŠ è¾¹æ¡†](https://tex.stackexchange.com/questions/11211/can-i-have-framed-blocks-in-beamer)ï¼Œå¯å‚è€ƒtcolorboxçš„[Manual](https://mirror.hmc.edu/ctan/macros/latex/contrib/tcolorbox/tcolorbox.pdf)  
 
-### Ïà¹ØÔÄ¶Á
-[ÊÖ°ÑÊÖ½ÌÄãÓÃLaTeXĞ´×÷²©Ê¿ÂÛÎÄ¡ª¡ªNicola L. C. Talbot][1]  
-[ÕÂ½Ú±êÌâÅÅ°æºê°ü][2]
-[Beamer¿ìËÙÈëÃÅ-ÖĞÒë±¾-»ÆĞñ»ªÀÏÊ¦·­Òë][3]
+### ç›¸å…³é˜…è¯»
+1. [æ‰‹æŠŠæ‰‹æ•™ä½ ç”¨LaTeXå†™ä½œåšå£«è®ºæ–‡â€”â€”Nicola L. C. Talbot][1]  
+1. [ç« èŠ‚æ ‡é¢˜æ’ç‰ˆå®åŒ…][2]
+1. [Beamerå¿«é€Ÿå…¥é—¨-ä¸­è¯‘æœ¬-é»„æ—­åè€å¸ˆç¿»è¯‘][3]
 
 [1]:https://mp.weixin.qq.com/s?__biz=MzAxNjI3Mzc3Mw==&mid=2652773033&idx=1&sn=007ae6bb8c3f26b66bddb0ddb112ca58&chksm=801de2abb76a6bbdd92bf576d59ce94b7bc458f3e34b7163937a32a215262c76a9be3d1b59a9&mpshare=1&scene=24&srcid=09089mUT0Tb1wOsi0EfYYlzF#rd
 [2]:https://mp.weixin.qq.com/s?__biz=MzAxNjI3Mzc3Mw==&mid=2652773067&idx=1&sn=d6e40ab83c5dfc1f5b4ca114dd7a8786&chksm=801de2c9b76a6bdfc1b45ad820632afd8e672be4a3137081a8e56b9fb4812e8b783192778e47&mpshare=1&scene=24&srcid=0908BS4VnswQpfLZCnqjr01Y#rd
 [3]:http://www.latexstudio.net/archives/51706.html
+
 ### Nice Model
-**Êé¼®Ä£°å**  
-[»¹Ô­¾­µäÑùÊ½µÄD&D 5e LaTeXÄ£°å](http://www.latexstudio.net/archives/6865.html)  
-[Ò»¸ö²»Ö¹ÓÚ¾«ÖÂµÄLaTeXÊé¼®Ä£°å](http://www.latexstudio.net/archives/51443.html)  
-**¼òÀúÄ£°å***  
-[ÁÖÁ«Ö¦µÄ¼òÀúLaTeXÄ£°å](http://www.latexstudio.net/archives/7498.html)  
-[moderncv¶¨ÖÆµÄÃÀÃÀµÄ¼òÀú](http://www.latexstudio.net/archives/11760.html)  
-[¼òÀú»áËµ»°£¡È«Ãæ¶øÏ¸ÖÂµÄÈıÀ¸Ê½¼òÀú](http://www.latexstudio.net/archives/51442.html)  
-**Ñ§Êõº£±¨**  
-[ÉîÀ¶×ÏÉ«Éè±¸º£±¨](http://www.latexstudio.net/archives/351.html)  
-[µ­À¶É«º£±¨](http://www.latexstudio.net/archives/5448.html)  
+
+**ä¹¦ç±æ¨¡æ¿**  
+1. [è¿˜åŸç»å…¸æ ·å¼çš„D&D 5e LaTeXæ¨¡æ¿](http://www.latexstudio.net/archives/6865.html)  
+1. [ä¸€ä¸ªä¸æ­¢äºç²¾è‡´çš„LaTeXä¹¦ç±æ¨¡æ¿](http://www.latexstudio.net/archives/51443.html)  
+
+**ç®€å†æ¨¡æ¿***  
+1. [æ—è²æçš„ç®€å†LaTeXæ¨¡æ¿](http://www.latexstudio.net/archives/7498.html)  
+1. [moderncvå®šåˆ¶çš„ç¾ç¾çš„ç®€å†](http://www.latexstudio.net/archives/11760.html)  
+2. [ç®€å†ä¼šè¯´è¯ï¼å…¨é¢è€Œç»†è‡´çš„ä¸‰æ å¼ç®€å†](http://www.latexstudio.net/archives/51442.html)  
+
+**å­¦æœ¯æµ·æŠ¥**  
+1. [æ·±è“ç´«è‰²è®¾å¤‡æµ·æŠ¥](http://www.latexstudio.net/archives/351.html)  
+1. [æ·¡è“è‰²æµ·æŠ¥](http://www.latexstudio.net/archives/5448.html)  
