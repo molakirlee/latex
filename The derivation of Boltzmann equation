@@ -1,0 +1,123 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{The derivation of Boltzmann equation}
+\author{Xilock}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The derivation of Boltzmann equation.
+\end{abstract}
+
+\section{Boltzmann}
+  \begin{equation}
+  \begin{aligned}
+    W&=\frac{N!}{N_1!N_2!\cdots N_i!} \\
+    &=\frac{N!}{\prod_iN_i!}
+  \end{aligned}
+  \end{equation}
+Take logarithm operation and Stirling's approximation:
+  \begin{equation}
+  \begin{aligned}
+    lnW &= NlnN - \sum N_ilnN_i \\
+    &=NlnN - \sum (Nw_ilnNw_i) \\
+    &=NlnN - \sum (Nw_i)lnN - \sum Nw_ilnw_i \\
+    &=NlnN - NlnN - \sum (Nw_i)lnw_i \\
+    &=-\sum (Nw_i)lnw_i \\
+    &=-N\sum w_ilnw_i
+  \end{aligned}
+  \end{equation}
+  
+  \begin{equation}
+  \begin{aligned}
+    \delta lnW &= (\delta N)lnN + N\frac{1}{N}\delta N - \sum (\delta N_i)lnN_i - \sum N_i\frac{1}{N_i}\delta N_i \\
+    &= lnN\delta N + \delta N - \sum lnN_i\delta N_i - \sum\delta N_i
+  \end{aligned}
+  \end{equation}
+  
+  Because:
+  \begin{equation}
+  \left\{
+  \begin{array}{c}
+    \sum (\delta N_i) = 0 = \delta N_i = \delta\sum N_i\\
+    \delta U = \sum E_i\delta N_i = 0
+  \end{array}
+  \right.
+  \end{equation}
+  
+  So:
+  \begin{equation}
+  \begin{array}{c}
+  \delta lnW = -\sum (lnN_i\delta N_i) \\
+  \delta lnW_{max} = -\sum (lnN_i\delta N_i) = 0
+  \end{array}
+  \end{equation}
+  
+  Use the Lagrange multiplie:
+  \begin{equation}
+      \sum lnN_i\delta N_i - \lambda\sum (\delta N_i) + \beta\sum (E_i\delta N_i) = 0 
+  \end{equation}
+  \begin{equation}
+      \sum (lnN_i - \lambda + \beta E_i)\delta N_i = 0
+  \end{equation}
+  
+  Because $\delta N_i$ is independent, 
+  the coefficient $lnN_i-\lambda +\beta E_i = 0$. \\
+  
+  Take $\lambda = ln\alpha$, and 
+  $$lnN_i - ln\alpha = -\beta E_i$$ 
+  $$ln\frac{N_i}{\alpha} = -\beta E_i$$
+  $$N_i = \alpha e^{-\beta E_i}$$.
+  
+  \begin{equation}
+      \frac{N_i}{N} = \frac{\alpha e^{-\beta E_i}}{\alpha\sum e^{-\beta E_i}}
+      =\frac{e^{-\beta E_i}}{\sum e^{-\beta E_i}}
+  \end{equation}
+  
+  \begin{equation}
+      N_i = \frac{N}{z}e^{-\beta E_i}
+  \end{equation}
+  
+  \begin{equation}
+      lnN_i = ln\frac{N}{z} - \beta E_i = lnN -lnz - \beta E_i
+  \end{equation}
+ 
+  \begin{equation}
+      N_ilnN_i = N_ilnN - N_ilnz - N_i\beta E_i
+  \end{equation}
+  
+  \begin{equation}
+  \begin{aligned}
+      \sum N_ilnN_i &= \sum N_ilnN - \sum N_ilnz - \sum\beta U_i \\
+      &= NlnN - \sum N_ilnz - \beta U
+  \end{aligned}
+  \end{equation}
+  
+  \begin{equation}
+  \begin{aligned}
+      lnW &= NlnN - \sum N_ilnN_i \\
+      &= NlnN - NlnN + \sum N_ilnz + \beta U
+      &= \sum N_ilnz + \beta U
+  \end{aligned}
+  \end{equation}
+  
+  So:
+  \begin{equation}
+      S = klnW
+  \end{equation}
+
+\end{document}
