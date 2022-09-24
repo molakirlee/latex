@@ -37,6 +37,8 @@ TeX系统是集成了编译 (La)TeX 文档所需的软件和宏包的系统。�
 
 对于任何阶段的 TeX 用户，这里都推荐安装 TeX Live 这一发行版。若你使用 macOS，则推荐安装基于 TeX Live 开发的 macTeX 这一发行版。**注意：不推荐 CTeX 发行版。没有理由，不听解释。**[参考：TeX 引擎、格式、发行版之介绍](http://www.latexstudio.net/archives/51537.html)
 
+还有一个精简版的[TinyTeX](https://yihui.org/tinytex/cn/)，只有100多兆，支持中文，可以试试。
+
 ### [引擎（编译器）](https://www.overleaf.com/learn/latex/Articles/The_TeX_family_tree:_LaTeX,_pdfTeX,_XeTeX,_LuaTeX_and_ConTeXt)
 引擎是真正干活的程序。引擎的基本功能就是解释TeX语法，把字排成行，把行排成页，涉及到断字、断行、分页等算法。最原始的引擎是TeX。
 
